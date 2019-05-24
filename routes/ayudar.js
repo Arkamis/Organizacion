@@ -6,8 +6,8 @@ const router = express.Router();
 
 paypal.configure({
     'mode': 'sandbox', //sandbox or live
-    'client_id': 'AdP64eWcwsiwslvrElceHbQNpQRvwhSyT7GgeYloboCCHITwMi9wNE7SWRFSRgcsX5huVdoV6theuafi',
-    'client_secret': 'EOwe7IVJeJc5O1cmWhWP8JHpeVmn3X55oskp7D2otHdXK_KNDGbZP7IWWJhV3lHZjKi9Zs40KmhQ_sfO'
+    'client_id': '',
+    'client_secret': ''
 });
 
 router.post('/pay', (req, res) => {
