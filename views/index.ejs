@@ -10,7 +10,18 @@
 </head>
 <body>
     <%include ./partials/menuNav%>
-    <%# someting go hereeee  %>
+    <div class="container mt-4">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.3"></script>
+        <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button"
+            data-size="large"><a target="_blank"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                class="fb-xfbml-parse-ignore">Compartir</a></div>
+        <div class="fb-like" data-href="https://www.facebook.com/NTCIAP/?epa=SEARCH_BOX" data-width=""
+            data-layout="button_count" data-action="like" data-size="large" data-show-faces="false" data-share="false">
+        </div>
+    </div>
     <% include ./partials/footer%>
     <% include ./partials/scripts%>
 </body>
