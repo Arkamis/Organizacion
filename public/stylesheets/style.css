@@ -6,3 +6,27 @@ body {
 a {
   color: #00B7FF;
 }
+
+@media screen and (max-width: 992px)
+{
+  article{
+    width: 50%;
+  }
+  .dSize{
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  article {
+    width: 100%;
+  }
+  .dSize {
+    width: 100%;
+  }
+  .fb,.tw{
+    width: 60%;
+    align-content: center;
+    align-content: space-between;
+  }
+}
