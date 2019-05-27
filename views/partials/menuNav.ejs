@@ -1,17 +1,21 @@
-<nav class="navbar bg-dark navbar-dark sticky-top">
-    <a class="navbar-brand" href="#">
-        <img src="img/logo.PNG" class="logoSize" alt="Logo">
+<nav class="navbar bg-dark navbar-dark sticky-top navbar-expand-sm justify-content-between">
+    <a class="navbar-brand" href="/#">
+      <img src="./img/logo.PNG" class="logoSize img-fluid" alt="Logo">
     </a>
-
-    <ul class="navbar justify-content-end list-unstyled">
-        <li class="nav-item">
-            <a class="nav-link text-white" href="#">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo02" >
+      <ul class="navbar-nav mr-auto text-right">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Inicio<span class="sr-only">(actual)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" href="#">Ayuda</a>
+          <a class="nav-link " href="/ayudar">ayudar</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-white" href="#">Actividades</a>
+          <a class="nav-link" href="/actividades">Actividades</a>
         </li>
-    </ul>
+      </ul>
+    </div>
 </nav>
