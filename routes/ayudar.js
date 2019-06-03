@@ -78,4 +78,7 @@ router.get('/success', (req,res) => {
 
 router.get('/cancel', (req, res) => res.send('Cancelled'));
 
+router.get('/', (req, res) => {
+    res.render('ayudar', { title: 'Ayudar' });
+})
 module.exports = router;
