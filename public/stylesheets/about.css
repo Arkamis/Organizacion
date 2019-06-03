@@ -1,11 +1,14 @@
-@media screen and (max-width: 992px) {
-    article {
+@media screen and (max-width: 962px) {
+    .container{
         width: 50%;
     }
 }
 
 @media screen and (max-width: 600px) {
-   article {
+   .container{
        width: 100%;
+   }
+   .adjTop{
+       margin-top: .5rem;
    }
 }
