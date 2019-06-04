@@ -3,15 +3,15 @@
 
 <head>
   <% include ./partials/head %>
-  <link rel="stylesheet" href="stylesheets/index.css">
+  <link rel="stylesheet" href="stylesheets/about.css">
   <title>acercade</title>
 </head>
 
 <body>
     <% include ./partials/menuNav %>
-    <main class="container-fluid mt-4 mx-auto">
+    <main class="container-fluid mx-auto p-0">
         <!--Quienes somos-->
-        <article class="container mx-auto shadow p-3 mb-4 rounded">
+        <article class="jumbotron p-3 p-md-5 text-white bg-secondary w-100">
             <div class="mx-auto text-center">
                 <h2 class="text-lg-center text-break">¿Quienes Somos?</h2>
             </div>
@@ -26,12 +26,24 @@
                 </div>
 
                 <div class="col-md-6 mt-3 shadow p-3 mb-5 rounded">
-                    <img src="img/op.jpg" class="img-fluid">
+                    <img src="./img/shrek.jpg" alt="someIMG" class="rounded mx-auto d-block img-fluid mt-3 mb-3" />
                 </div>
             </div>
-        </article>
 
-        <hr class="mx-auto w-50">
+            <hr class="mx-auto w-75">
+
+            <div class="mx-auto w-75 justify-content-center mt-3">
+                <p class="text-lg-center font-italic font-weight-light text-break">
+                    “Nuestro trabajo pone a la gente cara a cara
+                    con el amor. Para nosotros lo importante es el
+                    Individuo. Para amar a la persona debemos
+                    entrar en contacto estrecho con ella”
+                </p>
+                <p class="text-right font-italic text-break">
+                    Madre Teresa de Calcuta
+                </p>
+            </div>
+        </article>
 
         <!--Historia-->
         <article class="container mx-auto shadow p-3 mb-4 rounded">
@@ -52,6 +64,7 @@
             <hr class="mx-auto">
 
             <div class="container mx-auto">
+                <!--Programa de salud-->
                 <div class="row mx-auto">
                     <div class="col-md-6 mx-auto text-center align-self-center">
                         <h2 class="text-lg-center text-break">Programas de Salud</h2>
@@ -73,24 +86,25 @@
 
                 <hr class="mx-auto">
 
+                <!--Panadería-->
                 <div class="row mx-auto">
                     <div class="col-md-6 mt-3 order-last order-md-first">
                         <p class="text-justify text-break">
-                            Se apoyó a las escuelas de educación especial con material didáctico, aseo personal,
-                            limpieza, mantenimiento y eventos.
-
-                            Se brindó apoyo a familias de personas con discapacidad y de escasos recursos con apoyos en
-                            especie como colchones, alimentos, parrillas de gas, playeras, ropa.
+                            En el 2009 se equipó un taller de Panadería con horno, batidora, amasadora industrial,
+                            báscula, mesas de acero y todo los utensilios de cocina, así como material para elaboración de panes
+                            y galletas y equipos de protección. Capacitándose 21 personas con discapacidad y madres de
+                            familia y apoyando este taller en sus diferentes necesidades.
                         </p>
                     </div>
 
-                    <div class="col-md-6 mx-auto text-center align-self-center order-first order-md-last">
-                        <h2 class="text-lg-center text-break">Donativos y Material Didáctico</h2>
+                    <div class="col-md-6 mx-auto text-center align-self-center  order-first order-md-last">
+                        <h2 class="text-lg-center text-break">Talleres de Panadería</h2>
                     </div>
                 </div>
 
                 <hr class="mx-auto">
 
+                <!--Talleres de Capacitación Laboral-->
                 <div class="row mx-auto">
                     <div class="col-md-6 mx-auto text-center align-self-center">
                         <h2 class="text-lg-center text-break">Talleres de Capacitación Laboral</h2>
@@ -108,6 +122,7 @@
 
                 <hr class="mx-auto">
 
+                <!--Jardineria y vivero-->
                 <div class="row mx-auto">
                     <div class="col-md-6 mt-3 order-last order-md-first">
                         <p class="text-justify text-break">
@@ -126,28 +141,33 @@
 
                 <hr class="mx-auto">
 
+                <!--Donativos-->
                 <div class="row mx-auto">
                     <div class="col-md-6 mx-auto text-center align-self-center">
-                        <h2 class="text-lg-center text-break">Talleres de Panadería</h2>
+                        <h2 class="text-lg-center text-break">Donativos y Material Didáctico</h2>
                     </div>
 
                     <div class="col-md-6 mt-3">
                         <p class="text-justify text-break">
-                            En el 2009 se equipó un taller de Panadería con horno, batidora, amasadora industrial,
-                            báscula, mesas de acero y todo los utensilios de cocina, así como material para elaboración de panes
-                            y galletas y equipos de protección. Capacitándose 21 personas con discapacidad y madres de
-                            familia y apoyando este taller en sus diferentes necesidades.
+                            Se apoyó a las escuelas de educación especial con material didáctico, aseo personal,
+                            limpieza, mantenimiento y eventos.
+                
+                            Se brindó apoyo a familias de personas con discapacidad y de escasos recursos con apoyos en
+                            especie como colchones, alimentos, parrillas de gas, playeras, ropa.
                         </p>
                     </div>
                 </div>
 
                 <hr class="mx-auto">
 
+                <!--Musica-->
                 <div class="row mx-auto">
                     <div class="col-md-6 mt-3 order-last order-md-first">
                         <p class="text-justify text-break">
                             Se dotó de instrumentos musicales, grabadora, uniformes y maestro para grupo de música para
                             niños sordos “CUANDO VIBRAN LAS CUERDAS DEL ALMA”.
+                        </p>
+                        <p class="text-justify text-break">
                             El taller de música Orff les permite a los niños y jóvenes sordos un mejor aprovechamiento
                             escolar, desarrollando habilidades, aprender a tocar instrumentos de percusión y bailar.
                         </p>
@@ -270,5 +290,6 @@
         </article>
     </main>
     <% include ./partials/footer %>
+    <% include ./partials/scripts%>
 </body>
 </html>
