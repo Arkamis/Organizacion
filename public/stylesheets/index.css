@@ -218,8 +218,8 @@ img.actividades{
 }
 .logoSize:hover{
   max-width: 100%;
-  max-height:3rem;
-  transform: scale(1.5);
+  max-height:4rem;
+  transform: scale(2);
   transform: translateX(1);
 }
 .homeLink, a.homeLink:hover{
