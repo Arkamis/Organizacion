@@ -1,13 +1,16 @@
-@import '../../node_modules/normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400i,500,700i,900|Dosis:300,500,600,800|Josefin+Sans:300,300i,600,600i,700|Kalam|Lato:400i|Permanent+Marker&display=swap');
+
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
+}
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-html {
-  scroll-behavior: smooth;
-}
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
 
-
+}
 @media screen and (max-width: 992px)
 {
   .dSize{
@@ -207,35 +210,22 @@ img.actividades{
 .card {
   width: 20rem;
 }
+/* MENU NAVBAR STARTS */
 .logoSize{
   max-width: 100%;
-  max-height: 4rem;
+  max-height: 4rem ;
+  transition: transform .2s;
 }
+.logoSize:hover{
+  max-width: 100%;
+  max-height:4rem;
+  transform: scale(2);
+  transform: translateX(1);
+}
+.homeLink, a.homeLink:hover{
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+}
+/* NAV BAR ENDS */
 
-.imageb{
-  max-height: 600px;
-  max-width: 1980px;
-  min-height: 300px;
-}
-.image-container {
-  background-image: url("/img/banners/banner02.png");
-  background-size: cover;
-  position: relative;
-  height: 300px;
-}
-
-.text {
-  background-color: white;
-  color: black;
-  font-size: 10vw; 
-  font-weight: bold;
-  margin: 0 auto;
-  padding: 10px;
-  width: 50%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: screen;
-}
