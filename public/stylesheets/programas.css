@@ -1,0 +1,60 @@
+/* Parallax */
+.text {
+  background-color: white;
+  color: black;
+  font-size: 10vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+#parallax01{
+  /* The image used */
+  background: url('../img/banners/banner02.png');
+
+  /* Full height */
+  max-height: 400px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section#parallax02{
+  /* The image used */
+  background: url('../img/banners/img_nature_wide.jpg');
+
+  /* Full height */
+  max-height: 250px; 
+  width: 100%;
+  display: inline-block;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#parallax02 .wtitle{
+  
+}
+.wtitle{
+  padding: 150px 20px;
+}
+/* ScrollSpy */
+div.col-md-9.scrollspy-example{
+  overflow-y: scroll;
+  max-height: 400px;
+  max-width: 100%;
+}
+.image-container {
+  background-size: cover;
+  position: relative;
+  height: 300px;
+}
