@@ -49,7 +49,6 @@ section#parallax02{
 div.col-md-9.scrollspy-example{
   overflow-y: scroll;
   max-height: 400px;
-  max-width: 100%;
 }
 .image-container {
   background-size: cover;
