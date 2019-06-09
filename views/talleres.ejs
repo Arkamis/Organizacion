@@ -4,17 +4,19 @@
 <head>
     <% include ./partials/head %>
     <link rel="stylesheet" href="/stylesheets/talleres.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
     <title>talleres</title>
 </head>
 
 <body>
     <% include ./partials/menuNav %>
     <main class="container-fluid p-0 mx-auto">
-        <!--Taller jardineria y vivero-->
-        <article class="jumbotron p-3 p-md-5 mb-0 text-white bg-secondary w-100">
-            <div class="mx-auto text-center">
-                <h2 class="text-lg-center text-break">Taller de Jardineria y Vivero</h2>
-            </div>
+        <section id="id_tall" class="m-0 p-0">
+            <!--Taller jardineria y vivero-->
+            <article class="jumbotron p-3 p-md-5 mb-0 text-white bg-secondary w-100">
+                <div class="mx-auto text-center">
+                    <h2 class="text-lg-center text-break">Taller de Jardineria y Vivero</h2>
+                </div>
 
                 <div class="container mx-auto justify-content-center mt-3">
                     <p class="text-xl-center text-break">
@@ -25,194 +27,353 @@
                     </p>
                 </div>
 
-            <hr class="mx-auto w-50">
+                <hr class="mx-auto w-50">
 
-            <div class="mx-auto w-75 justify-content-center mt-3">
-                <p class="text-lg-center font-italic font-weight-light text-break">
-                    Nos interesa la inserción de las personas con discapacidad al sector productivo
-                </p>
-            </div>
-
-            <div class="mx-auto w-75 mt-3 text-center">
-                <div>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#galeria1"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Galería
-                    </button>
+                <div class="mx-auto w-75 justify-content-center mt-3">
+                    <p class="text-lg-center font-italic font-weight-light text-break">
+                        Nos interesa la inserción de las personas con discapacidad al sector productivo
+                    </p>
                 </div>
 
-                <div class="collapse mt-4 mx-auto w-100" id="galeria1">
-                    <div class="jumbotron bg-white text-dark">
-                            <div class="row">
-                                <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox"
-                                    data-gallery="gallery" class="col-md-3">
-                                    <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
-                                </a>
-                                <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox"
-                                    data-gallery="gallery" class="col-md-3">
-                                    <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid rounded">
-                                </a>
-                                <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox"
-                                    data-gallery="gallery" class="col-md-3">
-                                    <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid rounded">
-                                </a>
-                                <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox"
-                                    data-gallery="gallery" class="col-md-3">
-                                    <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">
-                                </a>
-                            </div>
+                <div class="mx-auto w-75 mt-3 text-center">
+                    <div>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#galeria1"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Galería
+                        </button>
+                    </div>
+
+                    <div class="container collapse mt-4 mx-auto w-100" id="galeria1">
+                        <div class="container gallery-container p-3 rounded bg-white text-dark">
+                            <div class="jv-gallery">
+                                <div class="row">
+                                    <a href="/img/talleres/Jardineria5.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/talleres/Jardineria5.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/talleres/Jardineria2.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/talleres/Jardineria2.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/talleres/Jardineria3.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/talleres/Jardineria3.jpg" class="img-fluid rounded">
+                                    </a>
+                                </div>
 
                             <hr>
 
-                            <div class="row">
-                                <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox"
-                                    data-gallery="gallery" class="col-md-3">
-                                    <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
-                                </a>
-                                <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox"
-                                    data-gallery="gallery" class="col-md-3">
-                                    <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid rounded">
-                                </a>
-                                <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox"
-                                    data-gallery="gallery" class="col-md-3">
-                                    <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid rounded">
-                                </a>
-                                <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox"
-                                    data-gallery="gallery" class="col-md-3">
-                                    <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">
-                                </a>
+                                <div class="row">
+                                    <a href="/img/talleres/Jardineria1.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-6">
+                                        <img src="/img/talleres/Jardineria1.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/talleres/Jardineria4.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-6">
+                                        <img src="/img/talleres/Jardineria4.jpg" class="img-fluid rounded">
+                                    </a>
+                                </div>
                             </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-        <!--Taller de panaderia-->
-        <article class="jumbotron p-3 p-md-5 mb-0 text-white bg-warning w-100">
-            <div class="mx-auto text-center">
-                <h2 class="text-lg-center text-dark text-break">Taller de Panadería</h2>
-            </div>
-
-            <div class="container mx-auto justify-content-center mt-3">
-                <p class="text-xl-center text-dark text-break">
-                    En el 2009 se equipó un taller de Panadería con horno, batidora, amasadora industrial, báscula,
-                    mesas de acero y todo los utensilios de cocina, así como material para elaboración de panes y galletas
-                    y equipos de protección.
-                    Capacitándose 21 personas con discapacidad y madres de familia y apoyando
-                    este taller en sus diferentes necesidades.
-                </p>
-            </div>
-
-            <hr class="mx-auto w-50">
-
-            <div class="mx-auto w-75 justify-content-center mt-3">
-                <p class="text-lg-center font-italic font-weight-light text-dark text-break">
-                    Elaboración de pan fino, tradicional y galletas.
-                </p>
-            </div>
-
-            <div class="mx-auto w-75 mt-3 text-center">
-                <div>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#galeria2"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Galería
-                    </button>
-                </div>
-
-                <div class="collapse mt-4 mx-auto w-100" id="galeria2">
-                    <div class="jumbotron bg-white text-dark">
-                        <div class="row">
-                            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox"
-                                data-gallery="gallery" class="col-md-4">
-                                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
-                            </a>
-                            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox"
-                                data-gallery="gallery" class="col-md-4">
-                                <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid rounded">
-                            </a>
-                            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox"
-                                data-gallery="gallery" class="col-md-4">
-                                <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid rounded">
-                            </a>
-                        </div>
-
-                        <hr>
-
-                        <div class="row">
-                            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox"
-                                data-gallery="gallery" class="col-md-4">
-                                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
-                            </a>
-                            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox"
-                                data-gallery="gallery" class="col-md-4">
-                                <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid rounded">
-                            </a>
-                            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox"
-                                data-gallery="gallery" class="col-md-4">
-                                <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid rounded">
-                            </a>
-                        </div>
-
-                        <div class="row">
-                            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox"
-                                data-gallery="gallery" class="col-md-12">
-                                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
-                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </article>
+            </article>
 
-        <!--Taller de musica-->
-        <article class="jumbotron p-3 p-md-5 mb-0 text-white bg-secondary w-100">
-            <div class="mx-auto text-center">
-                <h2 class="text-lg-center text-break">Taller de Música Para Niños Sordos</h2>
-            </div>
-
-            <div class="container mx-auto justify-content-center mt-3">
-                <p class="text-xl-center text-break">
-                    Se dotó de instrumentos musicales, grabadora, uniformes y maestro para grupo de música para niños
-                    sordos “CUANDO VIBRAN LAS CUERDAS DEL ALMA”. <br>
-                    El taller de música Orff les permite a los niños y jóvenes sordos un mejor aprovechamiento escolar,
-                    desarrollando habilidades, aprender a tocar instrumentos de percusión y bailar.
-                </p>
-            </div>
-
-            <div class="mx-auto w-75 mt-3 text-center">
-                <div>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#galeria3"
-                        aria-expanded="false" aria-controls="collapseExample">
-                        Galería
-                    </button>
+            <!--Taller de panaderia-->
+            <article class="jumbotron p-3 p-md-5 mb-0 text-white bg-warning w-100">
+                <div class="mx-auto text-center">
+                    <h2 class="text-lg-center text-dark text-break">Taller de Panadería</h2>
                 </div>
 
-                <div class="collapse mt-4 mx-auto w-100" id="galeria3">
-                    <div class="jumbotron bg-white text-dark">
-                        <div class="row">
-                            <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox"
-                                data-gallery="gallery" class="col-md-3">
-                                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
-                            </a>
-                            <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox"
-                                data-gallery="gallery" class="col-md-3">
-                                <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid rounded">
-                            </a>
-                            <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox"
-                                data-gallery="gallery" class="col-md-3">
-                                <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid rounded">
-                            </a>
-                            <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox"
-                                data-gallery="gallery" class="col-md-3">
-                                <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">
-                            </a>
+                <div class="container mx-auto justify-content-center mt-3">
+                    <p class="text-xl-center text-dark text-break">
+                        En el 2009 se equipó un taller de Panadería con horno, batidora, amasadora industrial, báscula,
+                        mesas de acero y todo los utensilios de cocina, así como material para elaboración de panes y
+                        galletas
+                        y equipos de protección.
+                        Capacitándose 21 personas con discapacidad y madres de familia y apoyando
+                        este taller en sus diferentes necesidades.
+                    </p>
+                </div>
+
+                <hr class="mx-auto w-50">
+
+                <div class="mx-auto w-75 justify-content-center mt-3">
+                    <p class="text-lg-center font-italic font-weight-light text-dark text-break">
+                        Elaboración de pan fino, tradicional y galletas.
+                    </p>
+                </div>
+
+                <div class="mx-auto w-75 mt-3 text-center">
+                    <div>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#galeria2"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Galería
+                        </button>
+                    </div>
+
+                    <div class="container collapse mt-4 mx-auto w-100" id="galeria2">
+                        <div class="container gallery-container p-3 rounded bg-white text-dark">
+                            <div class="tp-gallery">
+                                <div class="row">
+                                    <a href="/img/talleres/Panaderia.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/talleres/Panaderia.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/talleres/Panaderia1.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/talleres/Panaderia1.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/talleres/Panaderia3.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/talleres/Panaderia3.jpg" class="img-fluid rounded">
+                                    </a>
+                                </div>
+
+                                <hr>
+
+                                <div class="row">
+                                    <a href="/img/talleres/Panaderia4.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/talleres/Panaderia4.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/talleres/Panaderia5.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/talleres/Panaderia5.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/talleres/Panaderia6.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/talleres/Panaderia6.jpg" class="img-fluid rounded">
+                                    </a>
+                                </div>
+
+                                <hr>
+
+                                <div class="row">
+                                    <a href="/img/talleres/Panaderia7.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-12">
+                                        <img src="/img/talleres/Panaderia7.jpg" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </article>
+            </article>
+
+            <!--Taller de musica-->
+            <article class="jumbotron p-3 p-md-5 mb-0 text-white bg-secondary w-100">
+                <div class="mx-auto text-center">
+                    <h2 class="text-lg-center text-break">Taller de Música Para Niños Sordos</h2>
+                </div>
+
+                <div class="container mx-auto justify-content-center mt-3">
+                    <p class="text-xl-center text-break">
+                        Se dotó de instrumentos musicales, grabadora, uniformes y maestro para grupo de música para
+                        niños
+                        sordos “CUANDO VIBRAN LAS CUERDAS DEL ALMA”. <br>
+                        El taller de música Orff les permite a los niños y jóvenes sordos un mejor aprovechamiento
+                        escolar,
+                        desarrollando habilidades, aprender a tocar instrumentos de percusión y bailar.
+                    </p>
+                </div>
+
+                <div class="mx-auto w-75 mt-3 text-center">
+                    <div>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#galeria3"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Galería
+                        </button>
+                    </div>
+
+                    <div class="container collapse mt-4 mx-auto w-100" id="galeria3">
+                        <div class="container gallery-container p-3 rounded bg-white text-dark">
+                            <div class="mus-gallery">
+                                <div class="row">
+                                    <a href="/img/talleres/Musica1.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-6">
+                                        <img src="/img/talleres/Musica1.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/talleres/Musica2.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-6">
+                                        <img src="/img/talleres/Musica2.jpg" class="img-fluid rounded">
+                                    </a>
+                                </div>
+
+                                <hr>
+
+                                <div class="row">
+                                    <a href="/img/talleres/Musica3.jpg" data-toggle="lightbox" data-gallery="gallery"
+                                        class="col-md-6">
+                                        <img src="/img/talleres/Musica3.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/talleres/Musica4.jpg" data-toggle="lightbox" data-gallery="gallery"
+                                        class="col-md-6">
+                                        <img src="/img/talleres/Musica4.jpg" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+        <section id="id_tran" class="m-0 p-0">
+            <!--transporte-->
+            <article class="jumbotron p-3 p-md-5 mb-0 text-white bg-danger w-100">
+                <div class="mx-auto text-center">
+                    <h2 class="text-lg-center text-break">Transporte</h2>
+                </div>
+
+                <div class="container mx-auto justify-content-center mt-3">
+                    <p class="text-xl-center text-break">
+                        EN EL 2008 SE INCIA CON EL SERVICIO DE TRANSPORTE PARA NIÑAS Y NIÑOS CON DISCAPACIDAD Y DE
+                        ESCASOS RECURSOS EL "CAM JEAN PIAGET", INICIANDO CON 15 PERSONAS Y TRANSPORTANDOLOS DE SUS CASAS A
+                        SUS CENTROS DE ATENCION Y VICEVERSA.
+                    </p>
+                    <p class="text-lg-center text-break">
+                        TODOS LOS DIAS EMPIEZAN LOS RECORRIDOS A LAS 5.50 DE LA MAÑANA
+                        PARA LLEGAR PUNTUALES A LAS 7.00 A LA TELESECUNDARIA CON 37
+                        NIÑOS/AS Y JOVENES DE LOS MUNICIPIOS DE COLIMA Y VILLA DE ALVAREZ.
+                        TRANSPORTAMOS DIARIAMENTE A 68 NIÑAS, NIÑOS Y JOVENES CON DISCAPACIDAD Y DE ESCASOS RECURSOS DE
+                        SUS CASAS A SUS CENTROS DE ATENCION Y VICEVERSA.
+                    </p>
+                </div>
+
+                <div class="mx-auto w-75 mt-3 text-center">
+                    <div>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#galeria1"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            Galería
+                        </button>
+                    </div>
+
+                    <div class="container collapse mt-4 mx-auto w-100" id="galeria1">
+                        <div class="container gallery-container p-3 rounded bg-white text-dark">
+                            <div class="tr-gallery">
+                                <div class="row">
+                                    <a href="/img/transporte/Transporte4.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/transporte/Transporte4.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/transporte/Transporte2.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/transporte/Transporte2.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/transporte/Transporte3.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/transporte/Transporte3.jpg" class="img-fluid rounded">
+                                    </a>
+                                </div>
+
+                                <hr>
+
+                                <div class="row">
+                                    <a href="/img/transporte/Transporte1.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/transporte/Transporte1.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/transporte/Transporte5.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/transporte/Transporte5.jpg" class="img-fluid rounded">
+                                    </a>
+                                    <a href="/img/transporte/Transporte6.jpg" data-toggle="lightbox"
+                                        data-gallery="gallery" class="col-md-4">
+                                        <img src="/img/transporte/Transporte6.jpg" class="img-fluid rounded">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!--Cam jean-->
+            <article class="jumbotron p-3 p-md-5 mb-0 w-100">
+                <div class="mx-auto w-75 text-center justify-content-center">
+                    <h2 class="text-xl-center text-break">Cam Jean Piaget</h2>
+                </div>
+
+                <div class="container mx-auto w-75">
+                    <div class="row mx-auto">
+                        <div class="col-md-8 align-content-center">
+                            <p class="text-xl-justify text-break">
+                                LA SEGUNDA RUTA DE LOS 2 CAMIONCITOS COMO LE DICEN DE CARIÑO A
+                                LOS VEHICULOS ES TRANSPORTAR A 33 NIÑOS, NIÑAS CON DISCAPACIDAD
+                                DE PREESCOLAR Y PRIMARIA QUE ASISTEN AL CAM JEAN PIAGET.
+                                LLEGANDO PUNTALMENTE A LAS 8.00 DE LA MAÑANA, HORARIO ESPECIAL
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 mx-auto d-flex justify-content-center">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner mx-auto" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block mw-100" src="/img/download.jpg?image" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block mw-100" src="/img/download.jpg?image" alt="Second slide">
+                                    </div>
+                                    <ol class="carousel-indicators mb-0">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!--experiencias-->
+            <article class="jumbotron p-3 p-md-5 mb-0 text-white bg-dark w-100">
+                <div class="mx-auto w-75 text-center justify-content-center">
+                    <h2 class="text-xl-center text-break">Experiencias</h2>
+                </div>
+
+                <div class="container mx-auto w-75 p-0 contCarr">
+                    <div class="row mx-auto">
+                        <div class="col-lg-8 col-md-6 justify-content-center">
+                            <p class="text-xl-justify mx-auto text-break">
+                                EL TRANSPORTAR A NIÑOS/AS CON DIFERENTE DISCAPACIDAD NO ES UNA
+                                ACTIVIDAD SENCILLA, SE REQUIERE EN TODO MOMENTO OBSERVAR, ATENDER, ESCUCHAR,
+                                APOYAR Y ACTUAR CON URGENCIA CUANDO SE REQUIERA. <br>
+                                LA COMUNICACIÓN EFECTIVA, COORDINACION, ORDEN Y TRABAJO EN
+                                EQUIPO CON BENEFICIARIOS, PADRES DE FAMILIA, DIRECTORES, Y TODO EL
+                                PERSONAL QUE INTERVIENE EN EL PROYECTO SON FACTORES QUE HACEN POSIBLE LA
+                                EJECUCION DEL PROYECTO. <br>
+                                PERSONAL CAPACITADO EN PRIMEROS AUXILIOS, VEHICULOS EQUIPADOS
+                                CON EXTINTORES PERSONAL DE APOYO DURANTE LOS TRAYECTOS,
+                            </p>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mx-auto d-flex flex-wrap justify-content-center carrSize">
+                            <div id="carouselExampleIndicators2" class="carousel slide m-0"
+                                data-ride="carousel">
+                                <div class="carousel-inner mx-auto" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid mw-100" src="/img/download.jpg?image" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid mw-100" src="/img/download.jpg?image" alt="Second slide">
+                                    </div>
+                                    <ol class="carousel-indicators mb-0">
+                                        <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active">
+                                        </li>
+                                        <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </article>
+        </section>
     </main>
     <% include ./partials/footer %>
     <% include ./partials/scripts%>
+    <script type="text/javascript" src="./javascripts/gallery.js"></script>
 </body>
 </html>
