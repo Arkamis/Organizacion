@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <title>404 Not Found</title>
+</head>
+<body>`
+  <% include ./partials/menuNav%>
+  <div class="container">
+    <div class="mycontainer">
+      <div class="row ">
+        <div class="col-md-6  message">   
+          <h1 class="h1-notfound">Oops...!</h1>
+          <h3 class="h3-notfound"><span>Error 404 - pagina no encontrada</span></h3>
+          <p class="h4-notfound">
+            Algo salio mal y la pagina que buscas no pudo ser encontrada. Quizás 
+            el internet este roto o estes perdido. De cualquier forma estamos trabajando en ello ¯\_(ツ)_/¯
+          </p>
+          <ul class="list-unstyled">
+            <li class="li-notfound">Quizás te pueda ayudar: 
+              <ul >
+                <li class="li-notfound">Verifica que la URL sea correcta</li>
+                <li class="li-notfound">Regresar una pestaña</li>
+                <li class="li-notfound">Volver al <a href="/">inicio</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 message"> 
+          <img class="img-fluid" src="/img/random/404.png" >  
+        </div>
+      </div>
+    </div>
+  </div>
+  <% include ./partials/footer%>
+</body>
+</html>

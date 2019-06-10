@@ -1,0 +1,31 @@
+.mycontainer{
+    margin-top: 15vh;
+    padding-top: 4vh;
+    padding-bottom: 5vh;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+    background-color: #F7F7F7;
+}
+.message{
+    padding-left: 8vh;
+    padding-right: 8vh;
+    text-align: left;
+}
+.h1-notfound{
+    
+    font-size: 12vh;
+    color: rgb(11, 38, 147);
+
+}
+.h3-notfound{
+    color: #760411;
+    font-size: 6vh;
+}
+.h4-notfound{
+    color: #4F4F4F;
+    font-size: 3vh;
+}
+.li-notfound{
+    font-size: 2.5vh; 
+    color: #4F4F4F;
+}
+
