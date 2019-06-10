@@ -1,13 +1,16 @@
-@import '../../node_modules/normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400i,500,700i,900|Dosis:300,500,600,800|Josefin+Sans:300,300i,600,600i,700|Kalam|Lato:400i|Permanent+Marker&display=swap');
+
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
+}
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-html {
-  scroll-behavior: smooth;
-}
+  font-family: 'Alegreya', serif;
+  font-size: 1.5rem;
 
-
+}
 @media screen and (max-width: 992px)
 {
   .dSize{
@@ -24,6 +27,16 @@ html {
     align-content: center;
     align-content: space-between;
   }
+}
+
+header .carousel-item {
+  max-height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*
@@ -196,7 +209,6 @@ html {
   }
 }
 
-
 img.actividades{
   max-width: 100%;
   max-height: 100%;
@@ -207,35 +219,83 @@ img.actividades{
 .card {
   width: 20rem;
 }
+/* MENU NAVBAR STARTS */
+
+/* Shine EFFECT IMG
+*/
+figure.figureLogo {
+	position: relative;
+}
+figure.figureLogo::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 1;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-15deg);
+	transform: skewX(-15deg);
+}
+figure.figureLogo:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 50%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 50%;
+	}
+}
 .logoSize{
-  max-width: 100%;
-  max-height: 4rem;
+  width: 150px;
+  max-height: 50px;
+}
+.homeLink, a.homeLink:hover{
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  font-size: 1rem;
+}
+/* NAV BAR ENDS */
+
+
+/* PAGE 404 ERROR CSS  STARTS*/
+.mycontainer{
+  margin-top: 15vh;
+  padding-top: 4vh;
+  padding-bottom: 5vh;
+  box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+  background-color: #F7F7F7;
+}
+.message{
+  padding-left: 8vh;
+  padding-right: 8vh;
+  text-align: left;
+}
+.h1-notfound{
+  
+  font-size: 12vh;
+  color: rgb(11, 38, 147);
+
+}
+.h3-notfound{
+  color: #760411;
+  font-size: 6vh;
+}
+.h4-notfound{
+  color: #4F4F4F;
+  font-size: 3vh;
+}
+.li-notfound{
+  font-size: 2.5vh; 
+  color: #4F4F4F;
 }
 
-.imageb{
-  max-height: 600px;
-  max-width: 1980px;
-  min-height: 300px;
-}
-.image-container {
-  background-image: url("/img/banners/banner02.png");
-  background-size: cover;
-  position: relative;
-  height: 300px;
-}
-
-.text {
-  background-color: white;
-  color: black;
-  font-size: 10vw; 
-  font-weight: bold;
-  margin: 0 auto;
-  padding: 10px;
-  width: 50%;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: screen;
-}
+/* PAGE 404 ERROR ENDS */
