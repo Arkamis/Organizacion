@@ -1,96 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="stylesheets/index.css">
-        <% include ./partials/head %>
-    </head>
-    <body>
-    <% include ./partials/menuNav%>
-    <main class="container-fluid mt-4 mx-auto">
-            <article class="container mx-auto mt-3 shadow p-3 mb-4 rounded">
-                <div class="mx-auto text-center">
-                    <h3 class="text-md-center text-break">¿Que se hace con las donaciones?</h3>
-                </div>
-                
-                <div class="row mx-auto  justify-content-center">
-                    <div class="col-md-6 mt-3">
-                        <p class="text-justify text-break">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                            the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                            1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                            publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                    </div>
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <% include ./partials/head %>
+  </head>
+  <body>
+  <% include ./partials/menuNav%>
+  <main class="container-fluid mt-4 mx-auto">
+    <article class="container mx-auto mt-3 shadow p-3 mb-4 rounded">
+      <div class="mx-auto text-center">
+          <h3 class="text-md-center text-break">¿Que se hace con las donaciones?</h3>
+      </div>
+      
+      <div class="row mx-auto  justify-content-center">
+          <div class="col-md-6 mt-3">
+              <p class="text-justify text-break">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                  the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                  of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
+                  the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
+                  1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                  publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+          </div>
 
-                    <div class="col-md-6 mt-3 shadow p-3 mb-5 rounded">
-                        <img src="img/apoyo.jpg" class="img-fluid">
-                    </div>
-                </div>
+          <div class="col-md-6 mt-3 shadow p-3 mb-5 rounded">
+              <img src="img/apoyo.jpg" class="img-fluid">
+          </div>
+      </div>
 
-                <hr class="invisible d-inline-block mx-auto w-100">
+      <hr class="invisible d-inline-block mx-auto w-100">
 
-                <div class="row mx-auto justify-content-md-center shadow p-3 mb-4 w-75 rounded dSize">
-                    <div class="form-group col-md-10">
-                        <label for="quantity" class="text-break">Cantidad</label>
-                        <input type="number" class="form-control" id="quantity">
-                    </div>
+      <div class="row mx-auto justify-content-md-center shadow p-3 mb-4 w-75 rounded dSize">
+          <div class="form-group col-md-10">
+              <label for="quantity" class="text-break">Cantidad</label>
+              <input type="number" class="form-control" id="quantity">
+          </div>
 
-                    <div class="col-md-auto mt-4">
-                        <button type="button" class="btn btn-outline-primary btn-lg">Donar</button>
-                    </div>
-                </div>
+          <div class="col-md-auto mt-4">
+              <button type="button" class="btn btn-outline-primary btn-lg">Donar</button>
+          </div>
+      </div>
+    </article>
+    <hr class="mx-auto w-50">
+    <article class="container mx-auto shadow p-3 mb-4 rounded">
+      <div class="mx-auto text-break">
+          <h3 class="text-center">Comparte nuestra página con tus amigos :)</h3>
+          <h6 class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
+      </div>
+      
+      <hr class="invisible mb-3 mt-2 d-inline-block mx-auto w-100">
 
-            </article>
+      <div class="container">
+        <div class="row w-50 mx-auto d-flex justify-content-between">
+          <div id="fb-root"></div>
 
-            <hr class="mx-auto w-50">
+          <div class="fb-share-button fb-1 col-md-3 col-sm-3 d-flex justify-content-md-start mx-sm-auto"
+            data-href="https://developers.facebook.com/docs/plugins/"
+              data-layout="button" data-size="large"><a target="_blank"
+                  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
+                  class="fb-xfbml-parse-ignore">Compartir</a>
+          </div>
 
-            <article class="container mx-auto shadow p-3 mb-4 rounded">
-                <div class="mx-auto text-break">
-                    <h3 class="text-center">Comparte nuestra página con tus amigos :)</h3>
-                    <h6 class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h6>
-                </div>
-                
-                <hr class="invisible mb-3 mt-2 d-inline-block mx-auto w-100">
+          <div class="fb-like fb-2 col-md-3 col-sm-3 d-flex justify-content-md-start justify-content-sm-center"
+              data-href="https://www.facebook.com/NTCIAP/?epa=SEARCH_BOX"
+              data-layout="button_count" data-action="like" data-size="large" data-show-faces="false"
+              data-share="false">
+          </div>
 
-                <div class="container">
-                     <div class="row w-50 mx-auto d-flex justify-content-between">
-                            <div id="fb-root"></div>
+          <div class="col-md-3 col-sm-3 d-flex justify-content-md-start justify-content-sm-center d-md-none">
+            <a href="whatsapp://send?text=https://hackerthemes.com/bootstrap-cheatsheet/#nested__columns"
+            data-action="share/whatsapp/share">
+              <img class="h-75 w-75" src="https://jonathanmelgoza.com/blog/resources/whatssapp-sharing.png"/>
+            </a>
+          </div>
 
-                            <div class="fb-share-button fb-1 col-md-3 col-sm-3 d-flex justify-content-md-start mx-sm-auto"
-                                data-href="https://developers.facebook.com/docs/plugins/"
-                                 data-layout="button" data-size="large"><a target="_blank"
-                                     href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"
-                                     class="fb-xfbml-parse-ignore">Compartir</a>
-                            </div>
+          <div class="col-md-3 col-sm-3 d-flex justify-content-md-end justify-content-sm-center tw">
+            <a href="https://twitter.com/intent/tweet?button_hashtag=NTC&ref_src=twsrc%5Etfw"
+            class="twitter-hashtag-button" data-size="large" data-show-count="false">Tweet</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+  <% include ./partials/footer%>
+  <% include ./partials/scripts%>
 
-                            <div class="fb-like fb-2 col-md-3 col-sm-3 d-flex justify-content-md-start justify-content-sm-center"
-                                 data-href="https://www.facebook.com/NTCIAP/?epa=SEARCH_BOX"
-                                 data-layout="button_count" data-action="like" data-size="large" data-show-faces="false"
-                                 data-share="false">
-                            </div>
-
-                            <div class="col-md-3 col-sm-3 d-flex justify-content-md-start justify-content-sm-center">
-                                <a href="whatsapp://send?text=https://hackerthemes.com/bootstrap-cheatsheet/#nested__columns"
-                                    data-action="share/whatsapp/share">
-                                    <img class="h-75 w-75" src="https://jonathanmelgoza.com/blog/resources/whatssapp-sharing.png"/>
-                                </a>
-                            </div>
-
-                            <div class="col-md-3 col-sm-3 d-flex justify-content-md-end justify-content-sm-center tw">
-                                 <a href="https://twitter.com/intent/tweet?button_hashtag=NTC&ref_src=twsrc%5Etfw"
-                                     class="twitter-hashtag-button" data-size="large" data-show-count="false">Tweet</a>
-                            </div>
-                     </div>
-                </div>
-            </article>
-    </main>
-    <% include ./partials/footer%>
-    <% include ./partials/scripts%>
-
-    </body>
+  </body>
 </html>

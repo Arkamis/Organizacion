@@ -1,3 +1,4 @@
+'use strict';
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -38,9 +39,9 @@ app.use((req, res, next) => {
 });
 
 // error handler
-app.use((err, req, res) => {
+app.use( (err, req, res, next) => {
   // set locals, only providing error in development
-  console.log('I get an Error')
+ 
   // render the error page
   res.status(err.status || 500);
   res.render('error404');
