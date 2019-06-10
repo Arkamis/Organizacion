@@ -1,0 +1,8 @@
+@media (max-width: 576px){
+    .contCarr {
+        width: 100%;
+    }
+    .carrSize{
+        width: 50%;
+    }
+}
