@@ -1,0 +1,88 @@
+body{
+    position: relative;
+}
+.box {
+    display: flex;
+    width: 100%;
+    height: 8px;
+    margin: 5px 0px 60px 0px;
+  }
+  
+  .box-sm {
+    height: 8px;
+    margin: 0;
+    flex-grow: 1;
+    transition: all .8s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .box-sm:hover {
+    flex-grow: 12;
+  }
+  
+  .red {
+    background-color: #FF5852;
+  }
+  
+  .orange {
+    background-color: #FF9000;
+  }
+  
+  .yellow {
+    background-color: #FFD300;
+  }
+  
+  .green {
+    background-color: #3DCD49;
+  }
+  
+  .blue {
+    background-color: #0089D7;
+  }
+  
+  .purple {
+    background-color: #9E44C4;
+  }
+
+  /* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar {
+    transition: all 0.3s;
+}
+#sidebar p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar a.active {
+    color: #fff;
+    background: #6d7fcc;
+}
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+main p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
