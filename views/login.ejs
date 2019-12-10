@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NotiBuilder</title>
+    <% include ./partials/head %>
+</head>
+<style>
+  body{
+    background: url("/img/random/bgLogin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+  }
+  img {
+    max-width:412px;
+    max-height: 75px;
+  }
+</style>
+<body>
+  <section class="container bg-light shadow rounded">
+    <img class="rounded-circle mw-50 mx-auto d-block" src="/img/random/NotiBuilder.png"/>
+    <form class="m-5 py-5">
+      <div class="form-group">
+        <label for="formGroup">👤Usuario</label>
+        <input type="text" class="form-control" id="formUser" placeholder="Nombre de Usuario">
+      </div>
+      <div class="form-group">
+        <label for="formGroup">🔑Contrasena</label>
+        <input type="text" class="form-control" id="formPassowrd" placeholder="Contrasena">
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Ingresar</button>
+    </form>
+  </section>
+
+  <% include ./partials/scripts%>
+</body>
+</html>

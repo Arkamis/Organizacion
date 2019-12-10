@@ -11,6 +11,7 @@ var ayudarRouter = require('./routes/ayudar');
 var talleresRouter = require('./routes/talleres');
 var programasRouter = require('./routes/programas');
 var devsRouter = require('./routes/devs');
+var login = require('./routes/login');
 
 var app = express();
 
@@ -32,6 +33,7 @@ app.use('/ayudar', ayudarRouter);
 app.use('/talleres', talleresRouter);
 app.use('/programas', programasRouter);
 app.use('/developers', devsRouter);
+app.use('/login', login);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
