@@ -1,17 +1,8 @@
 'use strict';
-var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
-var indexRouter = require('./routes/index');
-var aboutRouter = require('./routes/about');
-var ayudarRouter = require('./routes/ayudar');
-var talleresRouter = require('./routes/talleres');
-var programasRouter = require('./routes/programas');
-var devsRouter = require('./routes/devs');
-var login = require('./routes/login');
 
 var app = express();
 
@@ -27,26 +18,7 @@ app.use(express.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/about', aboutRouter);
-app.use('/ayudar', ayudarRouter);
-app.use('/talleres', talleresRouter);
-app.use('/programas', programasRouter);
-app.use('/developers', devsRouter);
-app.use('/login', login);
-
-// catch 404 and forward to error handler
-app.use((req, res, next) => {
-  next(createError(404));
-});
-
-// error handler
-app.use( (err, req, res, next) => {
-  // set locals, only providing error in development
- 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error404');
-});
+require('./startup/routes')(app);
+require('./startup/DB/mongoose');
 
 module.exports = app;

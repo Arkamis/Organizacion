@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NotiBuilder</title>
-    <% include ./partials/head %>
+  <% include ./partials/head %>
+  <title>NotiBuilder</title>
 </head>
 <style>
-  body{
+  body, html{
     background: url("/img/random/bgLogin.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #cccccc;
+    height:100%;
   }
   img {
-    max-width:412px;
-    max-height: 75px;
+    max-width:50%;
   }
+  .formulario {
+    max-width: 540px;
+    margin-top: 20%;
+  }
+
 </style>
-<body>
-  <section class="container bg-light shadow rounded">
-    <img class="rounded-circle mw-50 mx-auto d-block" src="/img/random/NotiBuilder.png"/>
-    <form class="m-5 py-5">
+<body class=" mt-auto mb-auto d-flex">
+  <div class="d-flex align-items-center shadow rounded flex-column formulario bg-light mx-auto my-auto ">
+    <p class="w-50 mt-3 text-center">
+      <img class="rounded-circle shadow" src="/img/random/NotiBuilder.png"/>
+    </p>
+    <form class="m-2 mw-100">
       <div class="form-group">
         <label for="formGroup">👤Usuario</label>
         <input type="text" class="form-control" id="formUser" placeholder="Nombre de Usuario">
@@ -34,8 +38,7 @@
       
       <button type="submit" class="btn btn-primary">Ingresar</button>
     </form>
-  </section>
-
+  </div>
   <% include ./partials/scripts%>
 </body>
 </html>
