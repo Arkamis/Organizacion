@@ -1,3 +1,9 @@
+/* Menu nav Starts*/
+.shadow {
+  box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15) !important;
+}
+/* Menu nav ends */
+
 /* Sidebar nav starts */
 .sidenav{
   width: 250px;
@@ -70,6 +76,7 @@ article.container-fluid{
   min-height: 100vh;
   top: 0;
   right: 0;
+  background-color: #f8f9fc;
 }
 /* Content Ends */
 /* Media Query starts */
@@ -158,3 +165,28 @@ article.container-fluid{
 .card-deck .card .card-header .flex-even {
   flex: 1;
 }
+
+/* Noticias style start */
+textarea{
+  resize: none;
+}
+#imgInput{
+}
+#imgButton{
+
+}
+#imgNoti{
+  max-width: 100%;
+  min-width: 50%;
+  border: solid;
+  border-color: red;
+}
+
+.epigrafe.active{
+  display: block;
+}
+.epigrafe {
+  display: none;
+}
+
+/* Modals Style Ends */

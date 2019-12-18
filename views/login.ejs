@@ -6,38 +6,71 @@
 </head>
 <style>
   body, html{
-    background: url("/img/random/bgLogin.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #cccccc;
+    background: #30E8BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height:100%;
   }
   img {
     max-width:50%;
   }
   .formulario {
-    max-width: 540px;
-    margin-top: 20%;
+    width: 350px;
+    height: 50%;
+    background-color: #E8E8E8;
   }
-
+  .img-logo{
+    position: relative;
+    top: -50px;
+  }
+  .input-group-text{
+    background-color: #954811 ;
+  }
+  .input-group-prepend i{
+    color: #ffffff;
+  }
+  .btn-login{
+    background-color: #954811;
+    color: #fff;
+  }
+  .btn-login:hover{
+    background-color: #954811;
+    color: #fff;
+  }
 </style>
-<body class=" mt-auto mb-auto d-flex">
-  <div class="d-flex align-items-center shadow rounded flex-column formulario bg-light mx-auto my-auto ">
-    <p class="w-50 mt-3 text-center">
-      <img class="rounded-circle shadow" src="/img/random/NotiBuilder.png"/>
-    </p>
-    <form class="m-2 mw-100">
-      <div class="form-group">
-        <label for="formGroup">👤Usuario</label>
-        <input type="text" class="form-control" id="formUser" placeholder="Nombre de Usuario">
+<body>
+  <div class="container h-100">
+    <div class="d-flex h-100 justify-content-center">
+      <div class="d-flex shadow rounded flex-column formulario mt-auto mb-auto">
+        <div class="d-flex align-items-center flex-column mb-3">
+          <img class="shadow align-self-center bg-light rounded shadow img-logo" src="/img/notiBuilder/logo.png">
+          <small class="text-muted">Noticias Rapidas.</small>
+        </div>
+        <form class="m-2 mw-100" action="/dashboard" method="GET">
+          <div class="form-group">
+            <label for="email">Correo electronico:</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
+                </div>
+                <input type="email" class="form-control" id="formUser" placeholder="Nombre de Usuario" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="password">Contrasena:</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-unlock-alt"></i></span>
+                </div>
+                <input type="password" class="form-control" id="formPassowrd" placeholder="Contrasena" required>
+            </div>
+          </div>
+          <div class="d-flex flex-column mt-4">
+            <button type="submit" class="btn btn-login align-self-center">Ingresar</button>
+          </div>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="formGroup">🔑Contrasena</label>
-        <input type="text" class="form-control" id="formPassowrd" placeholder="Contrasena">
-      </div>
-      
-      <button type="submit" class="btn btn-primary">Ingresar</button>
-    </form>
+    </div>
   </div>
   <% include ./partials/scripts%>
 </body>

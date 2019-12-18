@@ -1,8 +1,3 @@
-<h3 class=" text-dark my-3 mr-2">Tus noticias...
-  <a id="createNew" data-toggle="modal" data-target="#exampleModal">
-    <i class="fas fa-plus-circle noti-t3" data-toggle="tooltip" data-placement="right" title="Crear una noticia nueva"></i>
-  </a>
-</h3> 
 <%# 
   <div class="card-columns py-3 ml-1 mr-1">
     <div class="card">
@@ -35,7 +30,80 @@
     </div>
   </div>
 %> 
-<section class="container-fluid">  
+<section class="container-fluid">
+  <h3>Crear una noticia Nueva 
+    <a id="createNew" data-toggle="collapse" data-target="#addNoticia" role="button" aria-controls="addNoticia">
+    <i class="fas fa-plus-circle noti-t3" data-toggle="tooltip" data-placement="right" title="Crear una noticia nueva"></i>
+    </a>
+  </h3>
+
+  <div class="row">
+    <div class="col-12">
+      <a href="https://sites.google.com/site/textosperiodisticoslanoticia/partes-de-la-noticia" 
+      class="badge badge-info my-auto" 
+      target="_blank"
+      data-toggle="tooltip" data-placement="right" title="Ver estructura de noticia">Ayuda</a>
+      <div class="container">
+        <form class="collapse" id="addNoticia" action="/noticia/add">
+          <fieldset class="form-group row">
+            <legend>Encabezado</legend>
+            <div class="col-12 mb-3">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Volanta</span>
+                  <input type="text" name="volanta" class="form-control" placeholder="Volanta de la noticia">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-2">
+              <div class="input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Titulo</span>
+                  <input type="text" name="titulo" class="form-control" placeholder="Titulo de la noticia">
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-4">
+              <div class="input-group-sm">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Copete</span>
+                  <textarea name="copete" class="form-control" placeholder="Copete de la noticia, una breve introduccion..."></textarea>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-group row">
+            <legend>Multimedia</legend>
+            <div class="col-12 mb-3">
+              <img src="#" alt="Inserta Una imagen para tu noticia..." id="imgNoti">  
+            </div>
+            <div class="input-group epigrafe">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Epígrafe</span>
+                <textarea type="text" name="epigrafe" class="form-control" placeholder="Describe la imagen..."></textarea>
+              </div>
+            </div>
+            <div class="col-12 mb-4">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Foto</span>
+                  <input type="file" name="foto" class="form-control" placeholder="Buscar Imagenes" id="imgInput" readonly/>
+                  <a id="imgButton" class="btn btn-outline-dark"><i class="far fa-image">Buscar Imagen</i></a>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h3 class=" text-dark my-3 mr-2">Tus noticias...</h3> 
+    </div>
+  </div>  
   <div class="row">
     <div class="col-md-4 col-sm-8 col-12 mb-4">
       <div class="card">
@@ -133,7 +201,6 @@
         </div>
       </div>
     </div>
+  </div>
 </section>
 </div>
-
-<% include ../modals/modalNoticias %> 
